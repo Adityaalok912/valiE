@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>ValiE-the email validator</title>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="img/mail.svg" alt="logo" srcset="">
+                <span>ValiE</span>
+                
+            </div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">contact us</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1>Enter your email here</h1>
+            <form action="/submit" method="post">
+                <!-- Text input for username -->
+                
+                <input placeholder="Enter email to validate"  type="text" id="Email" name="email" required="">
+                <br><br>
+                <!-- Submit button -->
+                <input id="submitBtn" class="btn" type="submit" value="Submit">
+              </form>
+        </div>
+
+        <div  class="container">
+            <h2>Your result</h2>
+            <div id="resultCont">
+                 Your results will show here
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        copyright | ValiE | All rights reserved
+    </footer>
+
+
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>
